@@ -4,7 +4,7 @@ class Dictionary
   attr_reader :references
 
   def initialize
-    json = File.read('/Users/BebePeng/gSchoolWork/self-referencing-documentation/data/dictionary.json')
+    json = File.read('./data/dictionary.json')
     @references = JSON.parse(json)
   end
 
