@@ -1,11 +1,8 @@
-require 'json'
-
 class Dictionary
   attr_reader :references
 
-  def initialize
-    json = File.read('./data/dictionary.json')
-    @references = JSON.parse(json)
+  def initialize(references)
+   @references = references
   end
 
   def definition(word)
